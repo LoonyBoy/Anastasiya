@@ -369,6 +369,7 @@ export default function Admin() {
               <AdminField label="Год" value={item.year} onChange={(v) => updateEduItem(i, 'year', v)} />
               <AdminField label="Название" value={item.title} onChange={(v) => updateEduItem(i, 'title', v)} />
               <AdminField label="Учреждение" value={item.institution} onChange={(v) => updateEduItem(i, 'institution', v)} />
+              <AdminImageField label="Изображение (при наведении)" value={item.image} onChange={(v) => updateEduItem(i, 'image', v)} />
               <AdminField label="Описание" value={item.description} onChange={(v) => updateEduItem(i, 'description', v)} type="textarea" />
             </div>
           ))}
