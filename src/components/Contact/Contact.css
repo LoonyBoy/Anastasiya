@@ -1,7 +1,7 @@
 .contact {
   padding: 10rem 3rem 6rem;
-  background: var(--color-text);
-  color: var(--color-bg);
+  background: #1a1a1a;
+  color: #e8e4de;
 }
 
 .contact__inner {
@@ -16,14 +16,14 @@
   line-height: 1;
   margin-bottom: 1rem;
   letter-spacing: -0.03em;
-  color: var(--color-bg);
+  color: #e8e4de;
 }
 
 .contact__subtitle {
   font-family: var(--font-serif);
   font-size: 1.6rem;
   font-style: italic;
-  color: rgba(245, 241, 235, 0.6);
+  color: rgba(232, 228, 222, 0.6);
   margin-bottom: 5rem;
 }
 
@@ -51,13 +51,13 @@
   font-size: 0.7rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(245, 241, 235, 0.4);
+  color: rgba(232, 228, 222, 0.4);
 }
 
 .contact__value {
   font-family: var(--font-sans);
   font-size: 1rem;
-  color: rgba(245, 241, 235, 0.85);
+  color: rgba(232, 228, 222, 0.85);
   line-height: 1.5;
 }
 
@@ -83,8 +83,8 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--color-text);
-  background: var(--color-bg);
+  color: #0f0f0f;
+  background: #e8e4de;
   padding: 1.2em 3em;
   border: none;
   cursor: pointer;
@@ -100,7 +100,7 @@
 .contact__footer {
   margin-top: 8rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(245, 241, 235, 0.1);
+  border-top: 1px solid rgba(232, 228, 222, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,13 +109,13 @@
 .contact__footer-name {
   font-family: var(--font-serif);
   font-size: 1.1rem;
-  color: rgba(245, 241, 235, 0.6);
+  color: rgba(232, 228, 222, 0.6);
 }
 
 .contact__footer-copy {
   font-family: var(--font-sans);
   font-size: 0.8rem;
-  color: rgba(245, 241, 235, 0.3);
+  color: rgba(232, 228, 222, 0.3);
 }
 
 @media (max-width: 768px) {

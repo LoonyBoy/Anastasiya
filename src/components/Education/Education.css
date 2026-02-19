@@ -33,13 +33,13 @@
   gap: 2rem;
   align-items: baseline;
   padding: 2rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   cursor: default;
   transition: opacity 0.3s;
 }
 
 .education__row:last-child {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Dim non-hovered rows when one is active */
