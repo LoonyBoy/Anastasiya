@@ -10,7 +10,7 @@
 
 .about__heading {
   font-family: var(--font-serif);
-  font-size: clamp(4rem, 10vw, 10rem);
+  font-size: clamp(3rem, 8vw, 7.5rem);
   font-weight: 400;
   line-height: 0.95;
   letter-spacing: -0.03em;
@@ -102,7 +102,7 @@
     gap: 2rem;
   }
   .about__heading {
-    font-size: clamp(2.5rem, 12vw, 5rem);
+    font-size: clamp(2rem, 10vw, 4rem);
     left: -5%;
     bottom: 3%;
   }

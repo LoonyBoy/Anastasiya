@@ -16,7 +16,7 @@ function StickyCard({ item, index, total, progress }) {
         className="services__card"
         style={{
           scale,
-          top: `calc(2vh + ${index * 28}px)`,
+          top: `calc(${index * 28}px)`,
         }}
       >
         {/* Full-bleed image */}
@@ -32,14 +32,12 @@ function StickyCard({ item, index, total, progress }) {
             <span className="services__card-index">
               {String(index + 1).padStart(2, '0')}
             </span>
-            <span className="services__card-duration">{item.duration}</span>
           </div>
           <div className="services__card-bottom">
             <div className="services__card-info">
               <h3 className="services__card-name">{item.name}</h3>
               <p className="services__card-desc">{item.description}</p>
             </div>
-            <span className="services__card-price">{item.price}</span>
           </div>
         </div>
       </motion.article>

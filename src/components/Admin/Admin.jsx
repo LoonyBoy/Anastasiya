@@ -390,10 +390,6 @@ export default function Admin() {
               </div>
               <AdminField label="Название" value={item.name} onChange={(v) => updateServiceItem(i, 'name', v)} />
               <AdminImageField label="Изображение" value={item.image} onChange={(v) => updateServiceItem(i, 'image', v)} />
-              <div className="admin__inline-group">
-                <AdminField label="Цена" value={item.price} onChange={(v) => updateServiceItem(i, 'price', v)} />
-                <AdminField label="Длительность" value={item.duration} onChange={(v) => updateServiceItem(i, 'duration', v)} />
-              </div>
               <AdminField label="Описание" value={item.description} onChange={(v) => updateServiceItem(i, 'description', v)} type="textarea" />
             </div>
           ))}
