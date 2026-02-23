@@ -114,7 +114,7 @@
 /* ─── Tablet ─── */
 @media (max-width: 900px) {
   .education {
-    padding: 6rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
   .education__row {
     grid-template-columns: 5rem 1fr;
@@ -132,7 +132,7 @@
 /* ─── Mobile ─── */
 @media (max-width: 600px) {
   .education {
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
   }
   .education__heading {
     margin-bottom: 3rem;

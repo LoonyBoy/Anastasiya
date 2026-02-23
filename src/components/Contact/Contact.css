@@ -120,7 +120,7 @@
 
 @media (max-width: 768px) {
   .contact {
-    padding: 6rem 1.5rem 4rem;
+    padding: 3rem 1.5rem 3rem;
   }
   .contact__content {
     grid-template-columns: 1fr;

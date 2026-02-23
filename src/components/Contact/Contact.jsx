@@ -21,62 +21,26 @@ export default function Contact() {
         <div className="contact__content">
           <Reveal delay={0.15} className="contact__info">
             <div className="contact__info-group">
-              <span className="contact__label">Email</span>
-              <a href={`mailto:${contact.email}`} className="contact__value contact__link">
-                {contact.email}
-              </a>
-            </div>
-
-            <div className="contact__info-group">
-              <span className="contact__label">Телефон</span>
-              <a href={`tel:${contact.phone}`} className="contact__value contact__link">
-                {contact.phone}
-              </a>
-            </div>
-
-            <div className="contact__info-group">
               <span className="contact__label">Telegram</span>
               <a
-                href={`https://t.me/${contact.telegram?.replace('@', '')}`}
+                href="https://t.me/Anastasi_Cherenkova"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact__value contact__link"
               >
-                {contact.telegram}
+                @Anastasi_Cherenkova
               </a>
-            </div>
-
-            <div className="contact__info-group">
-              <span className="contact__label">Instagram</span>
-              <a
-                href={`https://instagram.com/${contact.instagram?.replace('@', '')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact__value contact__link"
-              >
-                {contact.instagram}
-              </a>
-            </div>
-
-            <div className="contact__info-group">
-              <span className="contact__label">Адрес</span>
-              <span className="contact__value">{contact.address}</span>
-            </div>
-
-            <div className="contact__info-group">
-              <span className="contact__label">Часы работы</span>
-              <span className="contact__value">{contact.workingHours}</span>
             </div>
           </Reveal>
 
           <Reveal delay={0.25} className="contact__cta">
             <a
-              href={`https://t.me/${contact.telegram?.replace('@', '')}`}
+              href="https://t.me/Anastasi_Cherenkova"
               target="_blank"
               rel="noopener noreferrer"
               className="contact__cta-button"
             >
-              Записаться
+              Связаться
             </a>
           </Reveal>
         </div>

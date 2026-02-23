@@ -3,7 +3,7 @@
   position: relative;
   background: var(--color-bg);
   /* Extra bottom padding so last card has room to breathe */
-  padding-bottom: 15vh;
+  padding-bottom: 5vh;
 }
 
 /* ─── Header — sticky heading at the top ─── */
@@ -172,7 +172,7 @@
     max-width: 100%;
   }
   .services {
-    padding-bottom: 40vh;
+    padding-bottom: 15vh;
   }
 }
 
@@ -198,6 +198,6 @@
     font-size: 0.75rem;
   }
   .services {
-    padding-bottom: 30vh;
+    padding-bottom: 10vh;
   }
 }

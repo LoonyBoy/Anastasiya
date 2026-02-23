@@ -28,11 +28,6 @@ function StickyCard({ item, index, total, progress }) {
 
         {/* Text content over image */}
         <div className="services__card-content">
-          <div className="services__card-top">
-            <span className="services__card-index">
-              {String(index + 1).padStart(2, '0')}
-            </span>
-          </div>
           <div className="services__card-bottom">
             <div className="services__card-info">
               <h3 className="services__card-name">{item.name}</h3>

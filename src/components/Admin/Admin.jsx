@@ -411,10 +411,6 @@ export default function Admin() {
                 <button className="admin__btn-sm admin__btn--danger" onClick={() => removeWorkItem(i)}>Удалить</button>
               </div>
               <AdminImageField label="Изображение" value={item.image} onChange={(v) => updateWorkItem(i, 'image', v)} />
-              <div className="admin__inline-group">
-                <AdminField label="Название" value={item.title} onChange={(v) => updateWorkItem(i, 'title', v)} />
-                <AdminField label="Категория" value={item.category} onChange={(v) => updateWorkItem(i, 'category', v)} />
-              </div>
             </div>
           ))}
           <button className="admin__btn admin__btn--add" onClick={addWorkItem}>+ Добавить</button>
@@ -425,11 +421,8 @@ export default function Admin() {
           <AdminField label="Заголовок" value={data.contact.heading} onChange={(v) => updateContact('heading', v)} />
           <AdminField label="Подзаголовок" value={data.contact.subtitle} onChange={(v) => updateContact('subtitle', v)} />
           <AdminField label="Email" value={data.contact.email} onChange={(v) => updateContact('email', v)} />
-          <AdminField label="Телефон" value={data.contact.phone} onChange={(v) => updateContact('phone', v)} />
           <AdminField label="Telegram" value={data.contact.telegram} onChange={(v) => updateContact('telegram', v)} />
           <AdminField label="Instagram" value={data.contact.instagram} onChange={(v) => updateContact('instagram', v)} />
-          <AdminField label="Адрес" value={data.contact.address} onChange={(v) => updateContact('address', v)} />
-          <AdminField label="Часы работы" value={data.contact.workingHours} onChange={(v) => updateContact('workingHours', v)} />
         </AdminSection>
       </div>
     </div>

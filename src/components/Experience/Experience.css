@@ -76,7 +76,7 @@
 
 @media (max-width: 768px) {
   .experience {
-    padding: 6rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
   .experience__item {
     grid-template-columns: 1fr;
