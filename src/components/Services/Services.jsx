@@ -1,70 +1,36 @@
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { useSiteData } from '../../context/SiteDataContext';
+import Reveal from '../Reveal/Reveal';
 import './Services.css';
-
-function StickyCard({ item, index, total, progress }) {
-  const container = useRef(null);
-
-  const targetScale = Math.max(0.85, 1 - (total - index - 1) * 0.04);
-  const range = [index * (1 / total), 1];
-  const scale = useTransform(progress, range, [1, targetScale]);
-
-  return (
-    <div ref={container} className="services__card-wrap">
-      <motion.article
-        className="services__card"
-        style={{
-          scale,
-          top: `calc(${index * 28}px)`,
-        }}
-      >
-        {/* Full-bleed image */}
-        <div className="services__card-image">
-          <img src={item.image} alt={item.name} loading="lazy" />
-          {/* Gradient overlay for text readability */}
-          <div className="services__card-gradient" />
-        </div>
-
-        {/* Text content over image */}
-        <div className="services__card-content">
-          <div className="services__card-bottom">
-            <div className="services__card-info">
-              <h3 className="services__card-name">{item.name}</h3>
-              <p className="services__card-desc">{item.description}</p>
-            </div>
-          </div>
-        </div>
-      </motion.article>
-    </div>
-  );
-}
 
 export default function Services() {
   const { data } = useSiteData();
   const { services } = data;
-  const sectionRef = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ['start start', 'end end'],
-  });
 
   return (
-    <section className="services" id="services" ref={sectionRef}>
-      <div className="services__header">
+    <section className="services" id="services">
+      <div className="services__container">
         <h2 className="services__heading">{services.heading}</h2>
-      </div>
 
-      {services.items.map((item, i) => (
-        <StickyCard
-          key={item.id}
-          item={item}
-          index={i}
-          total={services.items.length}
-          progress={scrollYProgress}
-        />
-      ))}
+        <ul className="services__list">
+          {services.items.map((item, i) => (
+            <Reveal key={item.id}>
+              <li className="services__item">
+                <div className="services__item-number">
+                  {String(i + 1).padStart(2, '0')}
+                </div>
+                <div className="services__item-content">
+                  <h3 className="services__item-name">{item.name}</h3>
+                  {item.description && (
+                    <p className="services__item-desc">{item.description}</p>
+                  )}
+                </div>
+              </li>
+            </Reveal>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }

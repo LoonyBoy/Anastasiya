@@ -32,18 +32,18 @@
 
 .works__carousel-track {
   display: flex;
-  height: 480px;
+  height: 750px;
   align-items: center;
 }
 
 .works__slide {
   position: relative;
-  flex: 0 0 25%;
+  flex: 0 0 42%;
   min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 81.5%;
+  height: 94%;
   padding: 0 0.5rem;
 }
 
@@ -159,27 +159,24 @@
 /* ── Responsive ── */
 @media (max-width: 1200px) {
   .works__slide {
-    flex: 0 0 30%;
+    flex: 0 0 40%;
   }
 }
 
 @media (max-width: 768px) {
   .works__carousel-track {
-    height: 380px;
+    height: 560px;
   }
   .works__slide {
-    flex: 0 0 50%;
-  }
-  .works__heading {
-    margin-bottom: 2rem;
+    flex: 0 0 65%;
   }
 }
 
 @media (max-width: 480px) {
   .works__slide {
-    flex: 0 0 73%;
+    flex: 0 0 88%;
   }
   .works__carousel-track {
-    height: 340px;
+    height: 500px;
   }
 }

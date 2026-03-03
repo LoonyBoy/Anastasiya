@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef, useCallback } from 'react';
 import './SectionProgress.css';
 
 export default function SectionProgress() {
-  const sections = ['hero', 'about', 'experience', 'education', 'services', 'works', 'contact'];
-  const labels = ['Главная', 'Обо мне', 'Опыт', 'Обучение', 'Услуги', 'Работы', 'Контакты'];
+  const sections = ['hero', 'about', 'experience', 'education', 'works', 'services', 'contact'];
+  const labels = ['Главная', 'Обо мне', 'Опыт', 'Обучение', 'Работы', 'Услуги', 'Контакты'];
 
   const [activeIndex, setActiveIndex] = useState(0);
   const navRef = useRef(null);

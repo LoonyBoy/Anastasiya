@@ -33,8 +33,6 @@ export default function Works() {
   return (
     <section className="works" id="works">
       <div className="works__container">
-        <h2 className="works__heading">Работы</h2>
-
         <div className="works__carousel" ref={emblaRef}>
           <div className="works__carousel-track">
             {items.map((item, index) => (
@@ -61,20 +59,6 @@ export default function Works() {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Navigation */}
-        <div className="works__nav">
-          <button className="works__nav-btn" aria-label="Previous slide" onClick={scrollPrev}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="15 18 9 12 15 6" />
-            </svg>
-          </button>
-          <button className="works__nav-btn" aria-label="Next slide" onClick={scrollNext}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <polyline points="9 18 15 12 9 6" />
-            </svg>
-          </button>
         </div>
 
         {/* Pagination dots */}

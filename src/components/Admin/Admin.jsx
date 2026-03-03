@@ -247,10 +247,7 @@ export default function Admin() {
       {
         id: Date.now(),
         name: 'Новая услуга',
-        price: '0 ₽',
-        duration: '30 мин',
         description: '',
-        image: '',
       },
     ];
     updateSection('services', { ...data.services, items });
@@ -390,7 +387,6 @@ export default function Admin() {
                 <button className="admin__btn-sm admin__btn--danger" onClick={() => removeServiceItem(i)}>Удалить</button>
               </div>
               <AdminField label="Название" value={item.name} onChange={(v) => updateServiceItem(i, 'name', v)} />
-              <AdminImageField label="Изображение" value={item.image} onChange={(v) => updateServiceItem(i, 'image', v)} />
               <AdminField label="Описание" value={item.description} onChange={(v) => updateServiceItem(i, 'description', v)} type="textarea" />
             </div>
           ))}

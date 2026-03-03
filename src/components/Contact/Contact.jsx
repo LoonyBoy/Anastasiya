@@ -14,23 +14,45 @@ export default function Contact() {
           <h2 className="contact__heading">{contact.heading}</h2>
         </Reveal>
 
-        <Reveal delay={0.1}>
-          <p className="contact__subtitle">{contact.subtitle}</p>
-        </Reveal>
-
         <div className="contact__content">
-          <Reveal delay={0.15} className="contact__info">
-            <div className="contact__info-group">
-              <span className="contact__label">Telegram</span>
-              <a
-                href="https://t.me/Anastasi_Cherenkova"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="contact__value contact__link"
-              >
-                @Anastasi_Cherenkova
-              </a>
-            </div>
+          <Reveal delay={0.1} className="contact__info">
+            {contact.telegram && (
+              <div className="contact__info-group">
+                <span className="contact__label">Telegram</span>
+                <a
+                  href={`https://t.me/${contact.telegram.replace('@', '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact__value contact__link"
+                >
+                  {contact.telegram}
+                </a>
+              </div>
+            )}
+            {contact.instagram && (
+              <div className="contact__info-group">
+                <span className="contact__label">Instagram</span>
+                <a
+                  href={`https://instagram.com/${contact.instagram.replace('@', '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact__value contact__link"
+                >
+                  {contact.instagram}
+                </a>
+              </div>
+            )}
+            {contact.email && (
+              <div className="contact__info-group">
+                <span className="contact__label">Email</span>
+                <a
+                  href={`mailto:${contact.email}`}
+                  className="contact__value contact__link"
+                >
+                  {contact.email}
+                </a>
+              </div>
+            )}
           </Reveal>
 
           <Reveal delay={0.25} className="contact__cta">
